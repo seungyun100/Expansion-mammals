@@ -1,1 +1,14 @@
-Repository for range expansion of large mammals manuscript 
+This repository is supplemental to the following manuscript:
+
+Baek S.-Y., Amano T., Akasaka M., and Koike S. Large terrestrial mammals resurging in a depopulating country.
+
+This repository contains the codes used to estimate the process of range expansion and to analyse drivers of range expansion. 
+This repository also include the code used to create the coefficients plots for Figure 3, results from analysis for drivers of range expansion.
+
+You will find three codes
+
+1) Expansion process: code to estimate the process of range expansion of large terrestrial mammals.
+
+2) Expansion drivers: code used to analyse drivers of range expansion using used-available framework.
+
+3) Coefficient plots: code to create Figure 3 for coefficients plots.
