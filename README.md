@@ -12,12 +12,12 @@ This repository contains code used to estimate the process of range expansion, a
 
 This repository includes the following scripts:
 
-1. **Covariables**: Prepares environmental variables required for analyzing drivers of range expansion.
-2. **Expansion process and occupation model for Sika deer**: Estimates the range expansion process of sika deer and analyzes the drivers of its expansion.
-3. **Expansion process and occupation model for Wild boar**: Estimates the range expansion process of wild boar and analyzes the drivers of its expansion.
-4. **Expansion process and occupation model for Black bear**: Estimates the range expansion process of Asiatic black bears and analyzes the drivers of their expansion.
-5. **Expansion process and occupation model for Serow**: Estimates the range expansion process of Japanese serows and analyzes the drivers of their expansion.
-6. **Expansion process and occupation model for Macaque**: Estimates the range expansion process of Japanese macaques and analyzes the drivers of their expansion.
-7. **Expansion process and occupation model for Brown bear**: Estimates the range expansion process of brown bears and analyzes the drivers of their expansion.
-8. **Coefficient plots**: Generates Figure 3, showing coefficient plots from the occupation models.
+**1. Covariables**: Prepares environmental variables required for analyzing drivers of range expansion.
+**2. Expansion process and occupation model for Sika deer**: Estimates the range expansion process of sika deer and analyzes the drivers of its expansion.
+**3. Expansion process and occupation model for Wild boar**: Estimates the range expansion process of wild boar and analyzes the drivers of its expansion.
+**4. Expansion process and occupation model for Black bear**: Estimates the range expansion process of Asiatic black bears and analyzes the drivers of their expansion.
+**5. Expansion process and occupation model for Serow**: Estimates the range expansion process of Japanese serows and analyzes the drivers of their expansion.
+**6. Expansion process and occupation model for Macaque**: Estimates the range expansion process of Japanese macaques and analyzes the drivers of their expansion.
+**7. Expansion process and occupation model for Brown bear**: Estimates the range expansion process of brown bears and analyzes the drivers of their expansion.
+**8. Coefficient plots**: Generates Figure 3, showing coefficient plots from the occupation models.
 
