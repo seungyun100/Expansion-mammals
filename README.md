@@ -6,7 +6,7 @@ This repository is supplemental to the following manuscript
 
 Baek S.-Y., Amano T., Akasaka M., and Koike S.  *Large terrestrial mammals resurging in a depopulating country*
 
-This repository contains code used to estimate the process of range expansion, analyze drivers of range expansion (occupation model), and generate coefficient plots for Figure 3, which presents results from the analysis of range expansion drivers.
+This repository contains code used to (2~7)estimate the process of range expansion, analyze drivers of range expansion (occupation model), and (8)generate coefficient plots for Figure 3, which presents results from the analysis of range expansion drivers.
 
 ## Repository Contents
 
