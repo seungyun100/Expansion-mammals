@@ -19,5 +19,5 @@ This repository includes the following scripts:
 **5. Expansion process and occupation model for Serow**: Estimates the range expansion process of Japanese serows and analyzes the drivers of their expansion.<br/>
 **6. Expansion process and occupation model for Macaque**: Estimates the range expansion process of Japanese macaques and analyzes the drivers of their expansion.<br/>
 **7. Expansion process and occupation model for Brown bear**: Estimates the range expansion process of brown bears and analyzes the drivers of their expansion.<br/>
-**8. Coefficient plots**: Generates Figure 3, showing coefficient plots from the occupation models.
+**8. Generating coefficient plots**: Generates Figure 3, showing coefficient plots from the occupation models.
 
