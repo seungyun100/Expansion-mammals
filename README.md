@@ -1,5 +1,8 @@
+# Large Terrestrial Mammals Resurging in a Depopulating Country
 
-# This repository is supplemental to the following manuscript
+**Supplementary Code Repository for the Manuscript:**
+
+This repository is supplemental to the following manuscript
 
 Baek S.-Y., Amano T., Akasaka M., and Koike S. Large terrestrial mammals resurging in a depopulating country.
 
