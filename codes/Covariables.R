@@ -32,7 +32,7 @@ snow16 <- read.csv("./data/snow/2016/SD_Max_2016_inland_mean.csv") %>% select(me
 
 ## Abandonment
 abandon05 <- read.csv("./data/abandonment/agricensus2005_mesh5.csv") %>% select(mesh_code, abaTs) %>% rename(aband = abaTs)
-abandon15 <- read.csv("./data/abandonment/agricensus2015_mesh5_v2.csv") %>% select(mesh_code, abaTs) %>% rename(aband = abaTs)
+abandon15 <- read.csv("./data/abandonment/agricensus2015_mesh5.csv") %>% select(mesh_code, abaTs) %>% rename(aband = abaTs)
 
 
 #### Land Ratio
