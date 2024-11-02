@@ -1,5 +1,5 @@
 
-#This repository is supplemental to the following manuscript
+# This repository is supplemental to the following manuscript
 
 Baek S.-Y., Amano T., Akasaka M., and Koike S. Large terrestrial mammals resurging in a depopulating country.
 
