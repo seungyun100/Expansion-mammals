@@ -70,3 +70,5 @@ enviro2017 <- left_join(landuse14, light17, by = join_by(mesh_code)) %>%
 ###################################
 
 rm(list = setdiff(ls(), c("enviro2003", "enviro2014", "enviro2017")))
+
+###################################
