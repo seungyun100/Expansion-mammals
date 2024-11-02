@@ -1,3 +1,51 @@
+# Large Terrestrial Mammals Resurging in a Depopulating Country
+
+**Supplementary Code Repository for the Manuscript:**
+
+Baek S.-Y., Amano T., Akasaka M., and Koike S. *Large terrestrial mammals resurging in a depopulating country.*
+
+This repository includes code used to estimate the process of range expansion, analyze drivers of range expansion, and create coefficient plots for Figure 3 in the manuscript, presenting the results from the analysis on the drivers of range expansion.
+
+---
+
+## Repository Contents
+
+This repository contains the following scripts:
+
+1. **Covariables**: Script to prepare environmental variables required for analyzing the drivers of range expansion.
+2. **Expansion Process and Occupation Model for Sika Deer**: Script to estimate the range expansion process of sika deer and analyze the drivers of their expansion.
+3. **Expansion Process and Occupation Model for Wild Boar**: Script to estimate the range expansion process of wild boar and analyze the drivers of their expansion.
+4. **Expansion Process and Occupation Model for Black Bear**: Script to estimate the range expansion process of Asiatic black bears and analyze the drivers of their expansion.
+5. **Expansion Process and Occupation Model for Serow**: Script to estimate the range expansion process of Japanese serows and analyze the drivers of their expansion.
+6. **Expansion Process and Occupation Model for Macaque**: Script to estimate the range expansion process of Japanese macaques and analyze the drivers of their expansion.
+7. **Expansion Process and Occupation Model for Brown Bear**: Script to estimate the range expansion process of brown bears and analyze the drivers of their expansion.
+8. **Coefficient Plots**: Script to generate Figure 3, showing coefficient plots from the occupation models.
+
+---
+
+### Usage
+
+Each script is designed to run independently. Refer to comments within each script for specific usage details, data inputs, and any dependencies.
+
+---
+
+### Citation
+
+If you use any of the scripts or data from this repository in your research, please cite the following paper:
+
+> Baek S.-Y., Amano T., Akasaka M., and Koike S. *Large terrestrial mammals resurging in a depopulating country.*
+
+---
+
+### License
+
+This repository is available under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+---
+
+
+
+
 # This repository is supplemental to the following manuscript:
 
 Baek S.-Y., Amano T., Akasaka M., and Koike S. Large terrestrial mammals resurging in a depopulating country.
