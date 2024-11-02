@@ -512,4 +512,4 @@ blackbearp2p3_fit <- clogit(population ~ scale(AG) + scale(adjacent_counts) + sc
 #vif(blackbearp2p3_fit)
 summary(blackbearp2p3_fit)
 
-#############################################################################
+##############################################################################
