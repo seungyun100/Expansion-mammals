@@ -1,10 +1,32 @@
 
-library(dplyr)
 library(ggplot2)
+library(dplyr)
+library(broom)
+library(purrr)
+library(stringr)
 
 ###########################################################
 ##### Extract coefficients from the occupation models #####
 ###########################################################
+
+models <- list(
+  deer_hks_p1p2_fit,
+  deer_hks_p2p3_fit,
+  deer_hok_p1p2_fit,
+  deer_hok_p2p3_fit,
+  boar_p1p2_fit,
+  boar_p2p3_fit,
+  blackbear_p1p2_fit,
+  blackbear_p2p3_fit,
+  serow_p1p2_fit,
+  serow_p2p3_fit,
+  macaque_p1p2_fit,
+  macaque_p2p3_fit,
+  brownbear_p1p2_fit,
+  brownbear_p2p3_fit)
+
+
+
 
 
 ### Coefficients of occupation models for Sika deer in Honshu, Kyushu, and Shikoku (hks)
