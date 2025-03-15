@@ -249,7 +249,7 @@ adjacent_grids_df_ <- adjacent_grids_df %>% mutate(stage = source_stage) %>%
 ########### Step 6. occupation modeling
 
 wildboarp1p2_fit <- clogit(population ~ scale(AG) + scale(adjacent_counts) + scale(TRImean) + scale(aband) + scale(snow) +
-                             scale(NL2003) + strata(source_mesh_code), data = adjacent_grids_df_, model = TRUE)
+                             scale(NL) + strata(source_mesh_code), data = adjacent_grids_df_, model = TRUE)
 
 #vif(wildboarp1p2_fit)
 summary(wildboarp1p2_fit)
@@ -502,7 +502,7 @@ adjacent_grids_df_ <- adjacent_grids_df %>% mutate(stage = source_stage) %>%
 ########### Step 6. occupation modeling
 
 wildboarp2p3_fit <- clogit(population ~ scale(AG) + scale(adjacent_counts) + scale(TRImean) + scale(aband) + scale(snow) +
-                             scale(NL2014) + strata(source_mesh_code), data = adjacent_grids_df_, model = TRUE)
+                             scale(NL) + strata(source_mesh_code), data = adjacent_grids_df_, model = TRUE)
 
 #vif(wildboarp2p3_fit)
 summary(wildboarp2p3_fit)
