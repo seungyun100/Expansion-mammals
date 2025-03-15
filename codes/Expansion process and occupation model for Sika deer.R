@@ -252,7 +252,7 @@ adjacent_grids_df_ <- adjacent_grids_df %>% mutate(stage = source_stage) %>%
 adjacent_grids_df_hks <- adjacent_grids_df_ %>% filter(., !district == "hokkaido")
 
 sikadeer_hks_p1p2_fit <- clogit(population ~ scale(AG) + scale(adjacent_counts) + scale(TRImean) + scale(aband) + scale(snow) +
-                                  scale(NL2003) + strata(source_mesh_code), data = adjacent_grids_df_hks, model = TRUE)
+                                  scale(NL) + strata(source_mesh_code), data = adjacent_grids_df_hks, model = TRUE)
 
 vif(sikadeer_hks_p1p2_fit)
 summary(sikadeer_hks_p1p2_fit)
@@ -261,7 +261,7 @@ summary(sikadeer_hks_p1p2_fit)
 adjacent_grids_df_hok <- adjacent_grids_df_ %>% filter(., district == "hokkaido")
 
 sikadeer_hok_p1p2_fit <- clogit(population ~ scale(AG) + scale(adjacent_counts) + scale(TRImean) + scale(aband) + scale(snow) +
-                                  scale(NL2003) + strata(source_mesh_code), data = adjacent_grids_df_hok, model = TRUE)
+                                  scale(NL) + strata(source_mesh_code), data = adjacent_grids_df_hok, model = TRUE)
 
 #vif(sikadeer_hok_p1p2_fit)
 summary(sikadeer_hok_p1p2_fit)
@@ -516,7 +516,7 @@ adjacent_grids_df_ <- adjacent_grids_df %>% mutate(stage = source_stage) %>%
 adjacent_grids_df_hks <- adjacent_grids_df_ %>% filter(., !district == "hokkaido")
 
 sikadeer_hks_p2p3_fit <- clogit(population ~ scale(AG) + scale(adjacent_counts) + scale(TRImean) + scale(aband) + scale(snow) +
-                                  scale(NL2014) + strata(source_mesh_code), data = adjacent_grids_df_hks, model = TRUE)
+                                  scale(NL) + strata(source_mesh_code), data = adjacent_grids_df_hks, model = TRUE)
 
 #vif(sikadeer_hks_p2p3_fit)
 summary(sikadeer_hks_p2p3_fit)
@@ -525,7 +525,7 @@ summary(sikadeer_hks_p2p3_fit)
 adjacent_grids_df_hok <- adjacent_grids_df_ %>% filter(., district == "hokkaido")
 
 sikadeer_hok_p2p3_fit <- clogit(population ~ scale(AG) + scale(adjacent_counts) + scale(TRImean) + scale(aband) + scale(snow) +
-                                  scale(NL2014) + strata(source_mesh_code), data = adjacent_grids_df_hok, model = TRUE)
+                                  scale(NL) + strata(source_mesh_code), data = adjacent_grids_df_hok, model = TRUE)
 
 #vif(sikadeer_hok_p2p3_fit)
 summary(sikadeer_hok_p2p3_fit)
