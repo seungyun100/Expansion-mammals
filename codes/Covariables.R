@@ -25,10 +25,17 @@ topo <- read.csv("./data/topography/topography.csv")
 
 
 ## Snow
-snow02 <- read.csv("./data/snow/2002/SD_Max_2002_inland_mean.csv") %>% select(mesh_code, m_maxSD) %>% rename(snow = m_maxSD)
-snow13 <- read.csv("./data/snow/2013/SD_Max_2013_inland_mean.csv") %>% select(mesh_code, m_maxSD) %>% rename(snow = m_maxSD)
-snow16 <- read.csv("./data/snow/2016/SD_Max_2016_inland_mean.csv") %>% select(mesh_code, m_maxSD) %>% rename(snow = m_maxSD)
-
+snow <- read.csv("./data/snow/df_all_years.csv") %>% select(mesh_code, Max_SD, Mean_SD, year) 
+snow_mean <- snow %>%
+  group_by(mesh_code) %>%
+  summarise(
+    snow_max_80_02 = mean(Max_SD[year >= 1980 & year <= 2002 & year != 1991], na.rm = TRUE),
+    snow_max_03_13 = mean(Max_SD[year >= 2003 & year <= 2013], na.rm = TRUE),
+    snow_max_03_16 = mean(Max_SD[year >= 2003 & year <= 2016], na.rm = TRUE),
+    )
+snow_max_80_02 <- snow_mean %>% dplyr::select(mesh_code, snow_max_80_02) %>% rename(snow = snow_max_80_02)
+snow_max_03_13 <- snow_mean %>% dplyr::select(mesh_code, snow_max_03_13) %>% rename(snow = snow_max_03_13)
+snow_max_03_16 <- snow_mean %>% dplyr::select(mesh_code, snow_max_03_16) %>% rename(snow = snow_max_03_16)
 
 ## Abandonment
 abandon05 <- read.csv("./data/abandonment/agricensus2005_mesh5.csv") %>% select(mesh_code, abaTs) %>% rename(aband = abaTs)
@@ -46,7 +53,7 @@ district <- read.csv("./data/district/district_code.csv")
 
 enviro2003 <- left_join(landuse06, light03, by = join_by(mesh_code)) %>% 
   left_join(., topo, by = join_by(mesh_code)) %>% 
-  left_join(., snow02, by = join_by(mesh_code)) %>% 
+  left_join(., snow_max_80_02, by = join_by(mesh_code)) %>% 
   left_join(., abandon05, by = join_by(mesh_code)) %>% 
   left_join(., LandRatio, by = join_by(mesh_code)) %>%
   left_join(., district, by = join_by(mesh_code))
@@ -54,7 +61,7 @@ enviro2003 <- left_join(landuse06, light03, by = join_by(mesh_code)) %>%
 
 enviro2014 <- left_join(landuse14, light14, by = join_by(mesh_code)) %>% 
   left_join(., topo, by = join_by(mesh_code)) %>% 
-  left_join(., snow13, by = join_by(mesh_code)) %>% 
+  left_join(., snow_max_03_13, by = join_by(mesh_code)) %>% 
   left_join(., abandon15, by = join_by(mesh_code)) %>% 
   left_join(., LandRatio, by = join_by(mesh_code)) %>%
   left_join(., district, by = join_by(mesh_code))
@@ -62,7 +69,7 @@ enviro2014 <- left_join(landuse14, light14, by = join_by(mesh_code)) %>%
 
 enviro2017 <- left_join(landuse14, light17, by = join_by(mesh_code)) %>% 
   left_join(., topo, by = join_by(mesh_code)) %>% 
-  left_join(., snow16, by = join_by(mesh_code)) %>% 
+  left_join(., snow_max_03_16, by = join_by(mesh_code)) %>% 
   left_join(., abandon15, by = join_by(mesh_code)) %>% 
   left_join(., LandRatio, by = join_by(mesh_code)) %>%
   left_join(., district, by = join_by(mesh_code))
