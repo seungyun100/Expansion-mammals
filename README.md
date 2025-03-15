@@ -1,10 +1,10 @@
-# Large Terrestrial Mammals Resurging in a Depopulating Country
+# The range of large terrestrial mammals has expanded into human-dominated landscapes in Japan
 
 **Supplementary Code Repository for the Manuscript:**
 
 This repository is supplemental to the following manuscript
 
-Baek S.-Y., Amano T., Akasaka M., and Koike S.  *Large terrestrial mammals resurging in a depopulating country*
+Baek S.-Y., Amano T., Akasaka M., and Koike S.  *The range of large terrestrial mammals has expanded into human-dominated landscapes in Japan*
 
 This repository contains code used to estimate the process of range expansion, analyze drivers of range expansion (occupation model; 2~7), and generate coefficient plots for Figure 3, which presents results from the analysis of range expansion drivers(8).
 
