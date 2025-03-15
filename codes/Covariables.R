@@ -15,9 +15,9 @@ landuse14 <- read.csv("./data/landuse/mesh5_district_LU14_per.csv") %>%
 
 
 ## ALAN
-light03 <- read.csv("./data/ALAN/nightlight_2003.csv") %>% select(mesh_code, NL2003mean) %>% rename(NL2003 = NL2003mean)
-light14 <- read.csv("./data/ALAN/nightlight_2014.csv") %>% select(mesh_code, NL2014mean) %>% rename(NL2014 = NL2014mean)
-light17 <- read.csv("./data/ALAN/nightlight_2017.csv") %>% select(mesh_code, NL2017mean) %>% rename(NL2017 = NL2017mean)
+light03 <- read.csv("./data/ALAN/nightlight_2003.csv") %>% select(mesh_code, NL2003mean) %>% rename(NL = NL2003mean)
+light14 <- read.csv("./data/ALAN/nightlight_2014.csv") %>% select(mesh_code, NL2014mean) %>% rename(NL = NL2014mean)
+light17 <- read.csv("./data/ALAN/nightlight_2017.csv") %>% select(mesh_code, NL2017mean) %>% rename(NL = NL2017mean)
 
 
 ## Topography
