@@ -249,11 +249,11 @@ adjacent_grids_df_ <- adjacent_grids_df %>% mutate(stage = source_stage) %>%
 
 
 ########### Step 6. Occupation Modeling
-brownbearp1p2_fit <- clogit(population ~ scale(AG) + scale(adjacent_counts) + scale(TRImean) + scale(aband) + scale(snow) +
+brownbear_p1p2_fit <- clogit(population ~ scale(AG) + scale(adjacent_counts) + scale(TRImean) + scale(aband) + scale(snow) +
                               scale(NL) + strata(source_mesh_code), data = adjacent_grids_df_, model = TRUE)
 
-#vif(brownbearp1p2_fit)
-summary(brownbearp1p2_fit)
+#vif(brownbear_p1p2_fit)
+summary(brownbear_p1p2_fit)
 
 
 #############################################################################
@@ -502,10 +502,10 @@ adjacent_grids_df_ <- adjacent_grids_df %>% mutate(stage = source_stage) %>%
 
 
 ########### Step 6. Occupation Modeling
-brownbearp2p3_fit <- clogit(population ~ scale(AG) + scale(adjacent_counts) + scale(TRImean) + scale(aband) + scale(snow) +
+brownbear_p2p3_fit <- clogit(population ~ scale(AG) + scale(adjacent_counts) + scale(TRImean) + scale(aband) + scale(snow) +
                               scale(NL) + strata(source_mesh_code), data = adjacent_grids_df_, model = TRUE)
 
-#vif(brownbearp2p3_fit)
-summary(brownbearp2p3_fit)
+#vif(brownbear_p2p3_fit)
+summary(brownbear_p2p3_fit)
 
 #############################################################################
