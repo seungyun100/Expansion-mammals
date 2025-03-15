@@ -251,11 +251,11 @@ adjacent_grids_df_ <- adjacent_grids_df %>% mutate(stage = source_stage) %>%
 ########### Step 6. Occupation Modeling
 adjacent_grids_df_ <- adjacent_grids_df_ %>% filter(., !district == "shikoku")
 
-blackbearp1p2_fit <- clogit(population ~ scale(AG) + scale(adjacent_counts) + scale(TRImean) + scale(aband) + scale(snow) +
+blackbear_p1p2_fit <- clogit(population ~ scale(AG) + scale(adjacent_counts) + scale(TRImean) + scale(aband) + scale(snow) +
                               scale(NL) + strata(source_mesh_code), data = adjacent_grids_df_, model = TRUE)
 
-#vif(blackbearp1p2_fit)
-summary(blackbearp1p2_fit)
+#vif(blackbear_p1p2_fit)
+summary(blackbear_p1p2_fit)
 
 
 #############################################################################
@@ -506,11 +506,11 @@ adjacent_grids_df_ <- adjacent_grids_df %>% mutate(stage = source_stage) %>%
 ########### Step 6. Occupation Modeling
 adjacent_grids_df_ <- adjacent_grids_df_ %>% filter(., !district == "shikoku")
 
-blackbearp2p3_fit <- clogit(population ~ scale(AG) + scale(adjacent_counts) + scale(TRImean) + scale(aband) + scale(snow) +
+blackbear_p2p3_fit <- clogit(population ~ scale(AG) + scale(adjacent_counts) + scale(TRImean) + scale(aband) + scale(snow) +
                               scale(NL) + strata(source_mesh_code), data = adjacent_grids_df_, model = TRUE)
 
-#vif(blackbearp2p3_fit)
-summary(blackbearp2p3_fit)
+#vif(blackbear_p2p3_fit)
+summary(blackbear_p2p3_fit)
 
 ##############################################################################
 
