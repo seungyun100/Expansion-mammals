@@ -248,11 +248,11 @@ adjacent_grids_df_ <- adjacent_grids_df %>% mutate(stage = source_stage) %>%
 
 ########### Step 6. occupation modeling
 
-serowp1p2_fit <- clogit(population ~ scale(AG) + scale(adjacent_counts) + scale(TRImean) + scale(aband) + scale(snow) +
+serow_p1p2_fit <- clogit(population ~ scale(AG) + scale(adjacent_counts) + scale(TRImean) + scale(aband) + scale(snow) +
                           scale(NL) + strata(source_mesh_code), data = adjacent_grids_df_, model = TRUE)
 
-#vif(serowp1p2_fit)
-summary(serowp1p2_fit)
+#vif(serow_p1p2_fit)
+summary(serow_p1p2_fit)
 
 
 #############################################################################
@@ -502,10 +502,10 @@ adjacent_grids_df_ <- adjacent_grids_df %>% mutate(stage = source_stage) %>%
 
 
 ########### Step 6. Occupation Modeling
-serowp2p3_fit <- clogit(population ~ scale(AG) + scale(adjacent_counts) + scale(TRImean) + scale(aband) + scale(snow) +
+serow_p2p3_fit <- clogit(population ~ scale(AG) + scale(adjacent_counts) + scale(TRImean) + scale(aband) + scale(snow) +
                           scale(NL) + strata(source_mesh_code), data = adjacent_grids_df_, model = TRUE)
 
-#vif(serowp2p3_fit)
-summary(serowp2p3_fit)
+#vif(serow_p2p3_fit)
+summary(serow_p2p3_fit)
 
 #############################################################################
