@@ -252,7 +252,7 @@ adjacent_grids_df_ <- adjacent_grids_df %>% mutate(stage = source_stage) %>%
 adjacent_grids_df_ <- adjacent_grids_df_ %>% filter(., !district == "shikoku")
 
 blackbearp1p2_fit <- clogit(population ~ scale(AG) + scale(adjacent_counts) + scale(TRImean) + scale(aband) + scale(snow) +
-                              scale(NL2003) + strata(source_mesh_code), data = adjacent_grids_df_, model = TRUE)
+                              scale(NL) + strata(source_mesh_code), data = adjacent_grids_df_, model = TRUE)
 
 #vif(blackbearp1p2_fit)
 summary(blackbearp1p2_fit)
@@ -507,9 +507,10 @@ adjacent_grids_df_ <- adjacent_grids_df %>% mutate(stage = source_stage) %>%
 adjacent_grids_df_ <- adjacent_grids_df_ %>% filter(., !district == "shikoku")
 
 blackbearp2p3_fit <- clogit(population ~ scale(AG) + scale(adjacent_counts) + scale(TRImean) + scale(aband) + scale(snow) +
-                              scale(NL2017) + strata(source_mesh_code), data = adjacent_grids_df_, model = TRUE)
+                              scale(NL) + strata(source_mesh_code), data = adjacent_grids_df_, model = TRUE)
 
 #vif(blackbearp2p3_fit)
 summary(blackbearp2p3_fit)
 
 ##############################################################################
+
