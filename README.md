@@ -13,7 +13,7 @@ This repository contains code used to estimate the process of range expansion, a
 This repository includes the following scripts:
 
 
-**1. Covariables**: Prepares environmental variables required for analyzing drivers of range expansion.
+**1. Covariables(code)**: Prepares environmental variables required for analyzing drivers of range expansion.
 
 **2. Expansion process and occupation model for Sika deer**: Estimates the range expansion process of sika deer and analyzes the drivers of its expansion.
 
