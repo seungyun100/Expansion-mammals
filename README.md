@@ -6,7 +6,8 @@ This repository is supplemental to the following manuscript
 
 Baek S.-Y., Amano T., Akasaka M., and Koike S.  *The range of large terrestrial mammals has expanded into human-dominated landscapes in Japan*
 
-This repository contains code used to estimate the process of range expansion, analyze drivers of range expansion (occupation model; 2~7), and generate plots for Figure 3, 4, 5, and 6 (8~11).
+This repository contains code used to estimate the process of range expansion, analyze drivers of range expansion (occupation model; 2~7),
+and generate plots for Figure 3, 4, 5, and 6 (8~11).
 
 ## Repository Contents
 
