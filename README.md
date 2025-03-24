@@ -27,10 +27,10 @@ This repository includes the following scripts:
 
 **7. Expansion process and occupation model for Brown bear (in code)**: Estimates the range expansion process of brown bears and analyzes the drivers of their expansion.
 
-**8. Generating figure3_Number of occupied cells (in code)**: Generates Figure 3, showing coefficient plots from the occupation models.
+**8. Generating figure3_Number of occupied cells (in code)**: Generates Figure 3, showing cumulative number of occupied cells of six large mammal species.
 
-**9. Generating figure4_Coefficient plots (in code)**: Generates Figure 3, showing coefficient plots from the occupation models.
+**9. Generating figure4_Coefficient plots (in code)**: Generates Figure 4, showing coefficient plots from the occupation models.
 
-**10. Generating figure5_Landcover and elevation (in code)**: Generates Figure 3, showing coefficient plots from the occupation models.
+**10. Generating figure5_Landcover and elevation (in code)**: Generates Figure 5, showing mean proportion of three major land cover and elevation for occupied grid cells.
 
-**11. Generating figure6_Conflicts human-large mammals (in code)**: Generates Figure 3, showing coefficient plots from the occupation models.
+**11. Generating figure6_Conflicts human-large mammals (in code)**: Generates Figure 6, showing conflicts between humans and large terrestrial mammals across Japan.
