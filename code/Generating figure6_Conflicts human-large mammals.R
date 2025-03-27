@@ -12,12 +12,12 @@ library(grid)
 ##### Example of Crop damage 
 
 #Data reading
-crop_damage <- read.csv("./data/society_impact/crop_damage.csv") %>% mutate(Amount = Amount *0.001) #밀리언 엔으로 변환
+crop_damage <- read.csv("./data/society_impact/crop_damage.csv") %>% mutate(Amount = Amount *0.001) # Amount convert to Million Yen
 
 ### Crop damage data of sika deer 
 crop_damage_deer <- crop_damage %>% filter(Species == "deer")
 
-# 데이터 분리
+# Data by Prefecture
 df_deer_Hokkaido <- subset(crop_damage_deer, Prefecture == "Hokkaido")
 df_deer_Iwate <- subset(crop_damage_deer, Prefecture == "Iwate")
 
@@ -90,15 +90,15 @@ g <- gtable_add_grob(g, ax, pp$t, length(g$widths) - 1, pp$b)
 
 unit_label <- textGrob(
   "(million JPY)", 
-  x = unit(1, "npc") - unit(6, "mm"),      # 오른쪽 끝
-  y = unit(1, "npc") - unit(10, "mm"),     # ← 여기만 조정: 더 아래
+  x = unit(1, "npc") - unit(6, "mm"),      
+  y = unit(1, "npc") - unit(10, "mm"),    
   just = c("right", "top"),
   gp = gpar(fontsize = 14, col = "gray40")
 )
 
 combined <- grobTree(
-  g,            # ggplot grob
-  unit_label    # 텍스트 grob
+  g,            
+  unit_label   
 )
 
 grid.newpage()
@@ -113,7 +113,7 @@ dev.off()
 ##### Crop damage data of wild boar
 crop_damage_boar <- crop_damage %>% filter(Species == "boar")
 
-# 데이터 분리
+# Data by Prefecture
 df_boar_Chiba <- subset(crop_damage_boar, Prefecture == "Chiba")
 df_boar_Tochigi <- subset(crop_damage_boar, Prefecture == "Tochigi")
 
@@ -186,15 +186,15 @@ g <- gtable_add_grob(g, ax, pp$t, length(g$widths) - 1, pp$b)
 
 unit_label <- textGrob(
   "(million JPY)", 
-  x = unit(1, "npc") - unit(6, "mm"),      # 오른쪽 끝
-  y = unit(1, "npc") - unit(10, "mm"),     # ← 여기만 조정: 더 아래
+  x = unit(1, "npc") - unit(6, "mm"),      
+  y = unit(1, "npc") - unit(10, "mm"),    
   just = c("right", "top"),
   gp = gpar(fontsize = 14, col = "gray40")
 )
 
 combined <- grobTree(
-  g,            # ggplot grob
-  unit_label    # 텍스트 grob
+  g,            
+  unit_label  
 )
 
 grid.newpage()
