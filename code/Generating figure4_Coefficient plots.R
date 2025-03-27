@@ -91,9 +91,9 @@ ggplot(results_, aes(x = estimate, y = term, color = period, shape = as.factor(s
   geom_vline(xintercept = 0, size = 1, color = "darkgray", linetype = "dashed") +
   geom_errorbar(aes(xmin = conf.low, xmax = conf.high), width = 0.6, alpha = 0.5, position = position_dodge(width = 0.5)) +
   geom_point(size = 2, position = position_dodge(width = 0.5)) +
-  scale_shape_manual(values = c("significant" = 16, "insignificant" = 1)) +  # 매뉴얼로 점 모양 정의
+  scale_shape_manual(values = c("significant" = 16, "insignificant" = 1)) +  
   facet_grid( ~ species) +
-  labs(shape = "Significance") + # 범례 제목 설정
+  labs(shape = "Significance") + 
   scale_color_manual(values = c("#AADC32FF", "#443A83FF"), name = "Period",
                      labels = c("2003-2010's", "1978-2003")) +
   theme(plot.title = element_text(hjust = 0.5), legend.position = "bottom", legend.box = "vertical") + 
